@@ -1,0 +1,129 @@
+*{
+    margin:0;
+    padding:0;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    width: 100%;
+    height: 50px;
+    background:green;
+}
+header nav{
+    padding-top:15px;
+    text-align: center;
+    font-family: 'Courier New';
+}
+
+main{
+    width:40%;
+    margin:0 auto;
+    padding:30px;
+    background: blue;
+}
+
+/* info */
+.info h1{
+    font-size:42px;
+}
+.info .content{
+    margin-top:30px;
+    font-size:22px;
+}
+.info .leftFrame{
+    border:6px solid white;
+    width:120px;
+    height: 130px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-sizing: border-box;
+    float:left;
+    margin:0 30px 20px 0;
+}
+.info .link{
+    margin:10px auto;
+    text-align: center;
+}
+.info .link a{color:red;}
+.info .link a:link{color:red;}
+
+/* list */
+    .list .line{
+        font-size:34px;
+        font-weight: 600;
+    }
+    .list .line span{
+        margin-right:10px;
+    }
+    .list .line .colortext{
+        margin-right:10px;
+        color:red;
+    }
+    .list ul{
+        padding-left:40px;
+    }
+    .list li{
+        padding-top:10px;
+    }
+    .list li:nth-child(2){
+        color:rgb(71, 212, 255);
+        letter-spacing: 8px;
+    }
+
+/* flexbox */
+.flexbox{
+    font-size:26px;
+    display: flex;
+    justify-content: space-between;
+}
+.flexbox p{
+    margin-top:10px;
+}
+.flexbox .lineThrough{
+    text-decoration: line-through;
+}
+.flex_block {
+    width:200px;
+    height:160px;
+    border:1px solid white;
+    display:grid;
+    padding:4px;
+    grid-gap:4px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.flex_block .block{
+    border:1px solid white;
+    position: relative;
+}
+.flex_block .block span{
+    width:100%;
+    text-align: center;
+    position: absolute;
+    bottom:0;
+}
+.flex_block .block:first-child{
+    grid-row: 1/3;
+    background:green;
+}
+.flex_block .block:last-child{
+    grid-column: 2/4;
+    background:red;
+}
+
+.image1{
+    margin-top:-15px;
+    float:right
+}
+.image1 img{
+    width:32px;
+}
+
+footer {
+    width:100%;
+    height: 50px;
+    background:green;
+}
+footer div{
+    padding-top:15px;
+    text-align: center;
+}
